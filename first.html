@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internship Management System</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        .form-container { background: #fff; padding: 20px; margin: 50px auto; width: 350px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 15px; padding: 10px 20px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Internship Entry Form</h2>
+        <form action="display.php" method="post">
+            <label for="student">Student Name:</label>
+            <input type="text" id="student" name="student" required>
+
+            <label for ="company">Company:</label>
+            <input type ="text" id = "company" name ="company" required>
+
+            <label for ="domain">Domain:</label>
+            <input type ="text" id = "domain" name = "domain" required>
+            
+            <label for = "duration">Duration (in months):</label>
+            <input type = "text" id = "duration" name = "duration" required>
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>s
+                <option value="Ongoing">Ongoing</option>
+                <option value="Completed">Completed</option>
+                <option value="Pending">Pending</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
